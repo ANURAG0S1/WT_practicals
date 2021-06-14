@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=" initial-scale=1.0">
+    <title>register or sign up</title>
+    <style>
+        * {
+            font-family: sans-serif;
+            padding: none;
+            margin: 0px;
+            text-decoration: none;
+            list-style-type: none;
+
+            box-sizing: border-box;
+        }
+
+        div.center {
+            background: #000;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        label {
+            /* margin-top: 20px; */
+            /* padding-top: 20px; */
+        }
+
+        input {
+            border: 1px solid rgb(179, 179, 179);
+            border-radius: 10px;
+            padding: 4px 10px;
+            margin: 10px 10px;
+        }
+
+        .form form {
+            align-content: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(235, 235, 235);
+            padding: 20px 30px;
+            border-radius: 10px;
+            background: white;
+        }
+
+        .form {}
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="form">
+
+            <form action="login.html">
+                <h2 style="margin:auto; padding-bottom: 12px;">
+                    sign up/register
+                </h2> <label for=name">
+                    Name :
+                    <br>
+                    <input  id="name" type="name">
+                </label>
+                <label for="usrname"> username :
+                    <br>
+                    <input type="
+        username" id="username" placeholder="username">
+
+                </label>
+                <br>
+                <label for="
+    password">
+                    password : <br><input id="password" type="password" placeholder="password"></label>
+                <br>
+                <div class="click" onclick="setUser()" style="
+                background: rgb(9, 9, 66);
+                border-radius:10px;
+                padding:5px 10px;
+                color:white;
+                cursor: pointer;
+text-align: center;
+                ">Sign up</div>
+                 <button id="button"  style="visibility: hidden;">
+                     submit
+                 </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        async function setUser() {
+            localStorage.clear();
+            const username = await document.querySelector("#username").value;
+            localStorage.setItem('user', username)
+            const password = await document.querySelector("#password").value;
+            localStorage.setItem('password', password);
+            const name = await document.querySelector("#name").value;
+            localStorage.setItem('name', name)
+            console.log(name,username, password)
+            
+            document.querySelector("#button").click();
+            
+        }
+    </script>
+</body>
+
+</html>

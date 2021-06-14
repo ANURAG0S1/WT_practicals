@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+
+<body>
+    <div>
+        <form action="profile.html">
+            
+            <label for="username">
+                username :
+                <input id="username" type="username">
+            </label><label onchange="handlechange()" for="password">
+                password :
+                <input type="password">
+            </label>
+
+            <button> submit</button>
+        </form>
+    </div>
+    <script>
+
+        console.log(name)
+        async function handlechange() {
+            let name = await document.querySelector("#username").value;
+            localStorage.setItem('username', name)
+
+            console.log(name)
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>register or sign up</title>
+    <style>
+        * {
+            font-family: sans-serif;
+            padding: none;
+            margin: 0px;
+            text-decoration: none;
+            list-style-type: none;
+
+            box-sizing: border-box;
+        }
+
+        div.center {
+            background: #000;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        label {
+            /* margin-top: 20px; */
+            /* padding-top: 20px; */
+        }
+
+        input {
+            border: 1px solid rgb(179, 179, 179);
+            border-radius: 10px;
+            padding: 4px 10px;
+            margin: 10px 10px;
+        }
+
+        .form form {
+            align-content: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(235, 235, 235);
+            padding: 20px 30px;
+            border-radius: 10px;
+            background: white;
+        }
+
+        .form {}
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <div class="form">
+
+            <form action="profile.html">
+                <h2 style="margin:auto; padding-bottom: 12px;">
+                    log in
+                </h2>
+                <label for="usrname"> username :
+                    <input type="
+        username" id="username" placeholder="user">
+
+                </label>
+                <br>
+                <label for="
+    password">
+                    password : <input type="password" id="password" placeholder="password"></label>
+                <br>
+
+          
+                <div onclick="setcurrentuser()" style="
+                background:rgb(4, 4, 36);
+                border-radius:10px;
+                padding:5px 10px;
+                color:white;
+                text-align:center;
+
+                ">
+                    set user
+                </div>
+                <button id="btn" style="margin: auto; display: none;">submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const user = localStorage.getItem('user');
+
+        const password = localStorage.getItem('password');
+        async function setcurrentuser() {
+            const currentuser = await document.querySelector('#username').value;
+
+            const currentpassword = await document.querySelector("#password").value;
+
+
+            if (user != currentuser && password != currentpassword) {
+                alert('invalid credentials')
+            }else{
+           
+                document.querySelector("#btn").click()
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
