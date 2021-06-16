@@ -1,113 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content=" initial-scale=1.0">
-    <title>register or sign up</title>
-    <style>
-        * {
-            font-family: sans-serif;
-            padding: none;
-            margin: 0px;
-            text-decoration: none;
-            list-style-type: none;
-
-            box-sizing: border-box;
-        }
-
-        div.center {
-            background: #000;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            padding: 0;
-            height: 100vh;
-            width: 100vw;
-        }
-
-        label {
-            /* margin-top: 20px; */
-            /* padding-top: 20px; */
-        }
-
-        input {
-            border: 1px solid rgb(179, 179, 179);
-            border-radius: 10px;
-            padding: 4px 10px;
-            margin: 10px 10px;
-        }
-
-        .form form {
-            align-content: center;
-            justify-content: center;
-            display: flex;
-            flex-direction: column;
-            border: 1px solid rgb(235, 235, 235);
-            padding: 20px 30px;
-            border-radius: 10px;
-            background: white;
-        }
-
-        .form {}
-    </style>
+    <title> Starex University - Best Private University in Gurugram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.starexuniversity.com/assets/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.starexuniversity.com/assets/css/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://www.starexuniversity.com/assets/css/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://www.starexuniversity.com/assets/css/style.css?v1.1">
 </head>
-
 <body>
-    <div class="center">
-        <div class="form">
-
-            <form action="login.html">
-                <h2 style="margin:auto; padding-bottom: 12px;">
-                    sign up/register
-                </h2> <label for=name">
-                    Name :
-                    <br>
-                    <input  id="name" type="name">
-                </label>
-                <label for="usrname"> username :
-                    <br>
-                    <input type="
-        username" id="username" placeholder="username">
-
-                </label>
-                <br>
-                <label for="
-    password">
-                    password : <br><input id="password" type="password" placeholder="password"></label>
-                <br>
-                <div class="click" onclick="setUser()" style="
-                background: rgb(9, 9, 66);
-                border-radius:10px;
-                padding:5px 10px;
-                color:white;
-                cursor: pointer;
-text-align: center;
-                ">Sign up</div>
-                 <button id="button"  style="visibility: hidden;">
-                     submit
-                 </button>
-            </form>
+    <a href="https://www.starexuniversity.com/admission" class="btn fixed-btn btn2"> Admission 2021-22</a>
+    <section class="topbar">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-5 top-left">
+                    <p class="text-white"><span class="d-none d-lg-block ">Admission Helpline Toll Free: 1800 1033 123
+                        </span><span class="d-block d-lg-none"><img style="width:30px"
+                                src="https://www.starexuniversity.com/assets/images/tollfree.png" alt=""> 1800 1033 123
+                        </span> </p>
+                </div>
+                <div class="col-7 top-right p-0">
+                    <ul>
+                        <li><a href="https://www.starexuniversity.com/phd">PHD</a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <script>
-        async function setUser() {
-            localStorage.clear();
-            const username = await document.querySelector("#username").value;
-            localStorage.setItem('user', username)
-            const password = await document.querySelector("#password").value;
-            localStorage.setItem('password', password);
-            const name = await document.querySelector("#name").value;
-            localStorage.setItem('name', name)
-            console.log(name,username, password)
-            
-            document.querySelector("#button").click();
-            
-        }
-    </script>
+    </section>
+    <section>
+        <nav class="navbar navbar-expand-lg  " id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="https://www.starexuniversity.com/">
+                    <img src="https://www.starexuniversity.com/assets/images/Logo.png" class="logo" alt="">
+                    <img src="https://www.starexuniversity.com/assets/images/stickylogo.png" class="stickylogo" alt="">
+                </a>
+                <button class="navbar-toggler nav-opener" type="button">
+                    <span class="navbar-toggler-icon"> <i class="fa fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="about">
+                                About Starex
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="javascript:void(0)">Examination</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="javascript:void(0)">Facility</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.starexuniversity.com/campus-view">Campus
+                                    View</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="javascript:void(0)">Media</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="https://www.starexuniversity.com/news">News</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <link rel="stylesheet" type="text/css" href="https://www.starexuniversity.com/assets/engine1/style.css" />
+    <section class="banner">
+        <div class="row">
+            <div class="col-12 ">
+                <div class="owl-carousel owl-theme bannerr">
+                    <div class="item"><img src="https://www.starexuniversity.com/assets/data1/images/0.jpg"></div>
+                    <div class="item"><img src="https://www.starexuniversity.com/assets/data1/images/1.png"></div>
+                    <div class="item"><img src="https://www.starexuniversity.com/assets/data1/images/2.png"></div>
+                    <div class="item"><img src="https://www.starexuniversity.com/assets/data1/images/3.png"></div>
+                    <div class="item"><img src="https://www.starexuniversity.com/assets/data1/images/4.png"></div>
+                    <div class="item"><img src="https://www.starexuniversity.com/assets/data1/images/6.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="programm">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="titleHeading my50">Discover Your Perfect Courses in Our Schools</h2>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6 mt-5">
+                    <div class="schoolContainer">
+                        <div class="schoolimage"><img
+                                src="https://www.starexuniversity.com/uploads/StarexSchools/icons/Physical-Science-Icon-19.png "
+                                alt=""></div>
+                        <div class="title">
+                            <a href=" https://www.starexuniversity.com/academics/Physical-Sciences"> Physical
+                                Sciences</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6 mt-5">
+                    <div class="schoolContainer">
+                        <div class="schoolimage"><img
+                                src="https://www.starexuniversity.com/uploads/StarexSchools/icons/Life-Sciences-Icon-14.png "
+                                alt=""></div>
+                        <div class="title">
+                            <a href=" https://www.starexuniversity.com/academics/Life-Sciences"> Life Sciences</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6 mt-5">
+                    <div class="schoolContainer">
+                        <div class="schoolimage"><img
+                                src="https://www.starexuniversity.com/uploads/StarexSchools/icons/Yoga-Icon-15.png "
+                                alt=""></div>
+                        <div class="title">
+                            <a href=" https://www.starexuniversity.com/academics/Yoga-Sciences"> Yoga Sciences</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4 col-6 mt-5">
+                    <div class="schoolContainer">
+                        <div class="schoolimage"><img
+                                src="https://www.starexuniversity.com/uploads/StarexSchools/icons/Paramedical-Icon-17.png "
+                                alt=""></div>
+                        <div class="title">
+                            <a href=" https://www.starexuniversity.com/academics/Paramedical-Sciences"> Paramedical
+                                Sciences</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer py50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-12 about">
+                    <h4>About Starex University</h4>
+                    <p class="footerAbout">The Starex University, Gurugram, has been conceptualized under the provisions
+                        of Haryana Private Universities (Amendment) Act 2006.</p>
+                    <h4 class="mt-5">Our Address</h4>
+                    <p>Starex University
+                        <br> Address : NH-48, Vill- Binola, P.O. Bhorakalan, Gurugram, Haryana 122413 (India)
+                        <br> Toll Free : 1800 1033 123
+                    </p>
+                </div>
+                <div class="col-lg-2 col-sm-6 col-12 quicklink">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="https://www.starexuniversity.com/blog">Blog</a></li>
+                        <li><a href="">Sports</a></li>
+                        <li><a href="https://www.starexuniversity.com/contact">Contact Us</a></li>
+                     </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12 quicklink">
+                    <h4>Infrastructure</h4>
+                    <ul>
+                        <li><a href="https://www.starexuniversity.com/library">Library</a></li>
+                        <li><a href="https://www.starexuniversity.com/playground">Playground</a></li>
+                        <li><a href="https://www.starexuniversity.com/campus-view">Campus View</a></li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>
+<script>
+    $('.bannerr').owlCarousel({
+        loop: true,
+        autoplayTimeout: 5000,
+        nav: false,
+        items: 1,
+        autoplay: true,
+    })
+</script>
